@@ -1,0 +1,138 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../node_modules/bootstrap/scss/functions";
+@import "./variables";
+@import "./variables-dark";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+@import "./components/googleIcon.scss";
+@import "./components/card.scss";
+@import "./components/navBar.scss";
+@import "./components/carousel.scss";
+@import "./pages/welcome.scss";
+@import "./components/footer.scss";
+@import"./components/orderMgn.scss";
+
+// @import "./components/staffloginModal.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+* {
+  transition: 0.5s ease;
+  font-family: "Signika", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+}
+html,
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.homelayout,
+.cusdash {
+  min-height: 80vh;
+  margin-top: 170px;
+}
+.staffDashboard {
+  position: static;
+  min-height: 80vh;
+  // margin-top: 50px;
+}
+#root {
+  overflow: hidden;
+  padding-top: 0;
+  width: 100vw;
+}
+.btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid $primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    box-shadow: 5px 5px 10px 0.05px $dark;
+  }
+}
+
+.btn-primary {
+  background-color: $primary;
+  color: $artisGold;
+  &:hover {
+    background-color: $primary;
+    color: $artisGold;
+    box-shadow: 5px 5px 10px 0.05px $dark;
+  }
+  * {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+.bg-primary-text-gold {
+  background-color: $primary;
+  color: $artisGold;
+}
+.projectLogo {
+  height: 3rem;
+  filter: blur(20);
+}
+.divByArtis {
+  width: 100%;
+  position: relative;
+  display: block;
+  overflow-y: hidden;
+  .list {
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+    position: relative;
+  }
+}
+
+.bi::before {
+  display: inline-block;
+  content: "";
+  vertical-align: -0.125em;
+  background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>");
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+}
+
+.page-link {
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+.wishlistNumber {
+  position: absolute;
+  margin: 0 0 1rem 1rem;
+  background-color: $primary;
+  color: $artisGold;
+  width: 1.5rem;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0;
+}
+.biddingNumber {
+  position: absolute;
+  margin: 24px 0 0px 40px;
+  background-color: $primary;
+  color: $artisGold;
+  width: 1.5rem;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.underline {
+  border-bottom: 2px solid $info;
+  padding-bottom: 10px;
+}
+
+.grayfont {
+  color: $info !important;
+}
+

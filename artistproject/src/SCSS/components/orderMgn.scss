@@ -1,0 +1,8 @@
+.expanded-row {
+    background-color: #386ea395; /* 你可以選擇任何你想要的顏色 */
+    transition: background-color 0.3s ease; /* 平滑過渡效果 */
+  }
+.active-row {
+    background-color: #24a9ba; /* 可選擇不同的顏色 */
+    transition: background-color 0.3s ease;
+  }

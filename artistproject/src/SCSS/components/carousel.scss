@@ -1,0 +1,51 @@
+#carouselExampleControls {
+  margin-top: 10rem;
+  // max-height: 50vh;
+  // background-color: grey;
+}
+.carousel-inner {
+  background-image: url("../src/assets/carousel.png");
+  background-size: cover;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%; /* Adjust as needed */
+  height: fit-content; /* Adjust as needed */
+  .carousel-item {
+    background-color: rgba($primary, 80%);
+    height: 400px;
+    position: relative;
+
+    .card {
+      width: 12rem;
+      height: 15rem;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      left: 15%;
+      top: 18%;
+      background-color: transparent;
+      border-color: transparent;
+    }
+    .text {
+      font-size: 13px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 20%;
+      left: 35%;
+      color: #fff;
+      width: 100%;
+      .pName {
+        font-size: 2rem;
+      }
+      .aName,
+      .pDate {
+        font-size: 1.5rem;
+      }
+      .btn {
+        margin-left: 40%;
+      }
+    }
+  }
+}

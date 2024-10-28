@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./Css/all.css"> -->
+    <style>
+      .staff-login{
+        border: 1px solid black;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+      }
+      .logo{
+        /* 寬度50% */
+        width: 50%;
+        /* 背景顏色 */
+        background-color: aqua;
+        /* 高度55px */
+        height: 55px;
+        /* 展示 flex */
+        display: flex;
+        /* 字在上下的中間 */
+        align-items: center;
+        /* 字在左右的中間  對齊主軸線中央*/
+        justify-content: center;
+        /* 文字顏色 */
+        color: yellow;
+        /* 文字大小 */
+        font-size: 30px;
+        /* 文字寬度 */
+        font-weight: 800;
+        /* 上下間距各25px 左右間距auto 為平分*/
+        margin: 25px auto;
+      }
+      .input{
+        margin:0 30px;
+        text-align: center;
+      }
+      .inputcontainer{
+        display: flex;
+        width: 400px;
+        justify-content: space-between;
+        /* flex-direction: column; */
+        
+      }
+
+      .labelgroup{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .inputgroup{
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+        width: 100%;
+      }
+      .txtbox{
+        height: 36px;
+      }
+      .loginbtn{
+        width: 100px;
+        margin: 80px auto;
+        justify-content:center;
+      }
+      .btn{
+        width: 4rem;
+        cursor: pointer;
+        padding: 10px 20px;
+        border: 1px solid black;
+      }
+    </style>
+</head>
+<body>
+
+      <div class="staff-login">
+        <div class="logo">Artis LOGO</div>
+        <form action="">
+          <div class="input">
+            <h2>Staff Log In</h2>  
+            <div class="inputcontainer">
+              <div class="labelgroup">
+                <label for="">Username</label>
+                <label for="">Password</label>
+              </div>
+              <div class="inputgroup">
+              <input id="username" class="txtbox" name="username" type="text" placeholder="Username">
+              <input id="password" class="txtbox" name="password" type="text" placeholder="Password">
+              </div>
+            </div>
+          </div>
+        
+          <div class="loginbtn">
+            <div class="btn">LOG IN</div>
+          </div>
+        </form>
+      </div>
+      
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap");
+
+      * {
+        transition: 0.5s ease;
+        font-family: "Signika", "Gill Sans", "Gill Sans MT", Calibri,
+          "Trebuchet MS", sans-serif;
+      }
+      .login {
+        border: 1px solid black;
+        width: 450px;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .logo {
+        width: 50%;
+        margin: 25px auto;
+        height: 55px;
+        font-weight: 800;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #f8db8a;
+        background-color: #0a2540;
+      }
+      .input {
+        margin: 0 30px;
+      }
+      .inputcontainer {
+        display: flex;
+
+        width: 400px;
+        justify-content: space-between;
+      }
+      .labelgroup {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .labelgroup label {
+        height: 36px;
+        display: flex;
+        align-items: center;
+      }
+      .inputgroup {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+        width: 100%;
+      }
+      .txtbox {
+        height: 36px;
+      }
+      .btngroup {
+        width: 300px;
+        margin: 80px auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      .btn {
+        cursor: pointer;
+        padding: 10px 20px;
+        border: 1px solid#0A2540;
+      }
+      .btn-primary {
+        background-color: #0a2540;
+        color: #f8db8a;
+      }
+    </style>
+    <div class="login">
+      <div class="logo">Artis LOGO</div>
+      <form>
+        <div class="input">
+          <h2>Sign Up or Log In</h2>
+          <div class="inputcontainer">
+            <div class="labelgroup">
+              <label for="email">Email:</label>
+              <label for="password">Password:</label>
+            </div>
+            <div class="inputgroup">
+              <input
+                id="email"
+                class="txtbox"
+                name="email"
+                type="text"
+                placeholder="email"
+              />
+              <input
+                id="password"
+                class="txtbox"
+                name="password"
+                type="text"
+                placeholder="password"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="btngroup">
+          <div class="btn btn-secondary">LOG IN</div>
+          <div class="btn btn-primary">SIGN UP</div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

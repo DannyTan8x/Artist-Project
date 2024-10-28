@@ -1,0 +1,23 @@
+.circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  pointer-events: none; /* Prevent the circle from interfering with mouse events */
+  background: radial-gradient(
+    circle,
+    rgba(255, 215, 0, 1) 0%,
+    /* Golden center */ rgba(255, 215, 0, 0.5) 40%,
+    /* Fading golden */ rgba(255, 255, 255, 0) 80% /* White transparent edge */
+  );
+  box-shadow: 0 0 80px rgba(255, 215, 0, 0.8); /* Add a glowing effect */
+  transition: transform 0.2s ease-out;
+  z-index: 99;
+  cursor: none;
+}
+
+// body {
+//   margin: 0;
+//   height: 100vh;
+//   overflow: hidden;
+// }

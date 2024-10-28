@@ -1,0 +1,64 @@
+.staff-login {
+  border: 1px solid black;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  /* 寬度50% */
+  width: 50%;
+  /* 背景顏色 */
+  background-color: aqua;
+  /* 高度55px */
+  height: 55px;
+  /* 展示 flex */
+  display: flex;
+  /* 字在上下的中間 */
+  align-items: center;
+  /* 字在左右的中間  對齊主軸線中央*/
+  justify-content: center;
+  /* 文字顏色 */
+  color: yellow;
+  /* 文字大小 */
+  font-size: 30px;
+  /* 文字寬度 */
+  font-weight: 800;
+  /* 上下間距各25px 左右間距auto 為平分*/
+  margin: 25px auto;
+}
+.input {
+  margin: 0 30px;
+  text-align: center;
+}
+.inputcontainer {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  /* flex-direction: column; */
+}
+
+.labelgroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.inputgroup {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  width: 100%;
+}
+.txtbox {
+  height: 36px;
+}
+.loginbtn {
+  width: 100px;
+  margin: 80px auto;
+  justify-content: center;
+}
+.btn {
+  width: 4rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid black;
+}

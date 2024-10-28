@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Deposit{
+            display: flex;
+            flex-direction: column;
+            width: 1000px;
+            border:1px solid black;
+        }
+        .all{
+            margin: 0 20px;
+        }
+        .title{
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid gray;
+            
+        }
+        .word{
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .input{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 25px;
+        }
+
+        .txtbox{
+            width: 75px;
+        }
+        .Expiration-Date{
+            display: flex;
+        }
+        .Date{
+            width: 50px;
+        }
+        #cvv{
+            width: 25px;
+        }
+        .place-Bid{
+            display: flex;
+            justify-content: center;
+        }
+        .btn{
+            border: 1px solid black;
+            padding: 5px;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Deposit">
+        <div class="all">
+        <div class="title">
+        <h2>Deposit</h2>
+        </div>
+        <form action="">
+        <div class="inputgroup">
+            <div class="word">To participate in this auction, a refundable deposit is required. This<br/>
+                deposit will be used as a guarantee of your bids and will be refunded if<br/>
+                you do not win any items.The deposit amount is calculated as a<br/>
+                percentage of the current bid. You are required to pay a deposit of 10%<br/>
+                of your current bid amount during the bid.</div>
+            <div class="input">
+                <div class="input-credit">
+                <input type="text" class="txtbox">-<input type="text" class="txtbox">-<input type="text" class="txtbox">-<input type="text" class="txtbox">
+                </div>
+                <div class="Expiration-Date">
+                Expiration Date :<input type="text" class="Date">cvv: <input type="text" name="cvv" id="cvv">
+                </div>
+            </div>
+            <div class="place-Bid">
+                <div class="btn">Place Bid</div>
+            </div>
+        </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

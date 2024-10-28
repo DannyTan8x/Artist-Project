@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  springboot:
+    image: artistproject:latest
+    container_name: artistproject-springboot
+    build:
+      context: .
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/artistproject?useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 1234
+    networks:
+      - my-network
+
+networks:
+  my-network:

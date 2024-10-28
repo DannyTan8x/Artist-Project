@@ -1,0 +1,20 @@
+.star {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: yellow;
+  border-radius: 50%;
+  box-shadow: 0 0 58px rgba(255, 255, 0, 0.8); /* Glowing effect */
+  pointer-events: none; /* Prevent interaction */
+  transform: translate(-50%, -50%); /* Center the star on its coordinates */
+  z-index: 9;
+  // cursor: none;
+}
+
+// body {
+//   margin: 0;
+//   height: 100vh;
+//   overflow: hidden;
+//   // cursor: none; /* Hide the default mouse pointer */
+//   background-color: black; /* A dark background to make stars visible */
+// }
